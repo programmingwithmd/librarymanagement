@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <title>Library</title>
+
+
+  </head>
+  <body>
+
+    {% include "library/navbarstudent.html" %}
+
+<center>
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <form method="POST">
+        {% csrf_token %}
+        <div class = "form-group">
+            <p>
+            <label class="control-label col-xs-6">{{ form.as_p }}</lable>
+        </p>
+            <br>
+            <input type="submit" value="Send Message" class = 'btn btn-primary btn-sm'>
+                </div>
+            </form>
+        </center>
+
+
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    {% include "library/footer.html" %}
+  </body>
+</html>
