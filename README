@@ -1,0 +1,19 @@
+Library Management System
+*   With both Student and Admin Signup and Signin
+*   Can Add Books, Issue Books,etc...
+*   I have used html, css, bootstrap and django in this project.
+
+
+Create a Virtual Environment
+*   pip install virtualenv
+*   python -m venv env
+*   env\Scripts\activate
+
+Install
+*   python >3 --version
+*   django >3 --version
+
+Run
+*   python manange.py makemigrations
+*   python manange.py migrate
+*   python manange.py runserver
